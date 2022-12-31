@@ -1,0 +1,12 @@
+.home-social {
+  position: absolute;
+  top: 12.4rem;
+  left: 2.4rem;
+}
+
+@media screen and (min-width: 610px) {
+  .home-social {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

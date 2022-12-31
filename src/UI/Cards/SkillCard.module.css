@@ -1,0 +1,23 @@
+.skill-accordion {
+  width: 100%;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.skill-content {
+  overflow: hidden;
+  height: 0;
+  /* padding-left: 4.5rem;
+  margin-bottom: 1.6rem; */
+}
+.-active.skill-content {
+  height: auto;
+  margin-top: 2rem;
+  padding-left: 4.5rem;
+  margin-bottom: 1.6rem;
+}
+
+.skill-list {
+  width: 100%;
+  margin: 0;
+}

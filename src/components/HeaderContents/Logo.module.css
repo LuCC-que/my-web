@@ -1,0 +1,19 @@
+.logo {
+  color: var(--title-color);
+  font-weight: var(--semi-font);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .logo {
+    font-size: 1.6rem;
+    transition: 0.3s;
+  }
+  .logo:hover {
+    color: var(--first-color-hover);
+    transition: 0.3s;
+  }
+}

@@ -1,0 +1,18 @@
+.item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.item > .link > svg path {
+  fill: var(--first-color);
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 1024px) {
+  .item {
+    cursor: pointer;
+  }
+  .item:hover > .link > svg path {
+    fill: var(--first-color-hover);
+    transition: 0.3s;
+  }
+}

@@ -1,0 +1,28 @@
+.calltoaction {
+  font-family: var(--first-font);
+  font-size: 1.5rem;
+  color: var(--high-contrast);
+  background-color: var(--first-color);
+  padding: 2rem 1.8rem;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .calltoaction {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .calltoaction:hover {
+    background-color: var(--first-color-hover);
+    transition: 0.3s;
+  }
+}
+
+.calltoaction > svg {
+  margin-left: 0.5rem;
+}
+
+.calltoaction > svg path {
+  fill: var(--high-contrast);
+}

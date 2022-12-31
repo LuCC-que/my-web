@@ -1,0 +1,86 @@
+.calltoaction {
+  font-family: var(--first-font);
+  font-size: 1.5rem;
+  color: var(--high-contrast);
+  background-color: var(--first-color);
+  padding: 2rem 1.8rem;
+  border-radius: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .calltoaction {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .calltoaction:hover {
+    background-color: var(--first-color-hover);
+    transition: 0.3s;
+  }
+}
+
+.calltoaction > svg {
+  margin-left: 0.5rem;
+}
+
+.calltoaction > svg path {
+  fill: var(--high-contrast);
+}
+
+.home-content {
+  display: block;
+  font-weight: var(--medium-font);
+  color: var(--text-color);
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 610px) {
+  .home-content {
+    padding-right: 3rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .home-content {
+    width: 105%;
+  }
+}
+
+.home-title {
+  font-size: 3.2rem;
+  font-weight: var(--semi-font);
+  color: var(--title-color);
+}
+
+@media screen and (min-width: 1024px) {
+  .home-title {
+    width: 100%;
+    font-size: 5rem;
+  }
+}
+
+.subtitle {
+  display: inline-block;
+  font-size: 1.8rem;
+  margin-bottom: 1.4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .subtitle {
+    font-size: 2.1rem;
+  }
+}
+
+.text {
+  font-size: 1.5rem;
+  margin-bottom: 5rem;
+  color: var(--text-color-light);
+}
+
+@media screen and (min-width: 1024px) {
+  .text {
+    font-size: 1.6rem;
+  }
+}
+
+/*=== HOME END ===*/

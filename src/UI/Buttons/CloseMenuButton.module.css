@@ -1,0 +1,15 @@
+.close-menu-button {
+  width: 100%;
+  height: 4rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 0 2.4rem;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 1024px) {
+  .close-menu-button {
+    display: none;
+  }
+}

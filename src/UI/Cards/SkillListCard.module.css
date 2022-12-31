@@ -1,0 +1,52 @@
+.skill-item {
+  margin-bottom: 2.5rem;
+}
+
+.skill-title {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .skill-title {
+    font-size: 1.6rem;
+  }
+}
+
+.name {
+  font-weight: var(--semi-font);
+  color: var(--text-color);
+}
+
+.value {
+  font-weight: var(--medium-font);
+  color: var(--text-color-light);
+}
+
+.skill-bar {
+  display: block;
+  width: 100%;
+  height: 0.6rem;
+  background-color: var(--first-color-lighter);
+}
+
+.skill-bar::after {
+  content: "";
+  display: block;
+  height: inherit;
+  background-color: var(--first-color);
+}
+
+/* progress bar, specify item */
+.skill-bar.-htmlcss::after {
+  width: 90%;
+}
+.skill-bar.-js::after {
+  width: 60%;
+}
+
+/*=== SKILLS END ===*/

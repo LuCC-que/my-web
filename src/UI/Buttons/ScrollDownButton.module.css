@@ -1,0 +1,28 @@
+.scroll-down {
+  position: absolute;
+  width: 13rem;
+  bottom: 4rem;
+  left: 14rem;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: var(--semi-font);
+  color: var(--title-color);
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+@media screen and (min-width: 1024px) {
+  .scroll-down {
+    display: flex;
+    cursor: pointer;
+  }
+  .scroll-down > .icon > path {
+    fill: var(--first-color);
+  }
+  .scroll-down:hover {
+    transform: translateY(20%);
+    transition: transform 0.3s ease-in-out;
+  }
+}

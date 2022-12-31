@@ -1,0 +1,19 @@
+@media screen and (min-width: 610px) {
+  .about-photo {
+    width: 50%;
+    text-align: center;
+  }
+}
+
+.about-photo > picture > img {
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .about-photo > picture > img {
+    width: 35.5rem;
+    height: auto;
+    text-align: center;
+  }
+}
