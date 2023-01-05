@@ -1,10 +1,11 @@
 import classes from "./DownloadButton.module.css";
+import CV from "../../assets/cv_lu_chen_.pdf";
 const DownloadButton = () => {
   return (
     <a
-      href="./assets/pdf/alexa_cv.pdf"
+      href={CV}
       className={`${classes.calltoaction} ${classes["-download"]}`}
-      rel="noopener"
+      rel="noreferrer"
       target="_blank"
     >
       Download CV

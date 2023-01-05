@@ -6,7 +6,7 @@ img {
   position: absolute;
   top: 0;
   right: 1em;
-  z-index: 1000;
+  z-index: 1;
   font-weight: bold;
   font-size: 1.125rem;
   background: rgba(0, 0, 0, 0.65);

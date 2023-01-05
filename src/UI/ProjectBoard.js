@@ -4,9 +4,6 @@ const ProjectBoard = (props) => {
   const { projects } = props;
   return (
     <div className={classes.container}>
-      {/* <ProjectCard></ProjectCard>
-      <ProjectCard></ProjectCard>
-      <ProjectCard></ProjectCard> */}
       {projects.map((project) => (
         <ProjectCard project={project} key={project.title} />
       ))}
