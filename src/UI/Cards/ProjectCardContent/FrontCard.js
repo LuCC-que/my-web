@@ -1,13 +1,12 @@
-import gameCover from ".././img/game-cover.jpg";
 import classes from "./FrontCard.module.css";
 
 const FrontCard = (props) => {
   const isHovered = props.isHovered;
-  const { title, subtitle, langauges } = props.project;
+  const { title, subtitle, langauges, image } = props.project;
   // console.log(langauges);
   return (
     <div className={`${classes.front} ${isHovered && classes.hover}`}>
-      <img className={classes.thumbnail} src={gameCover} alt="" />
+      <img className={classes.thumbnail} src={image} alt="" />
       <h3
         className={`${classes.name} ${classes.icon} ${
           isHovered && classes.hoverName

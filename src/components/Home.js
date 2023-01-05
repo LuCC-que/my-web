@@ -17,7 +17,6 @@ const Home = () => {
 
       <div className={classes.container}>
         <HomeDescription />
-        <ScrollDownButton />
       </div>
     </section>
   );

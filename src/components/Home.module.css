@@ -2,18 +2,37 @@
 .section {
   width: 100vw;
   height: auto;
-  background-color: #ffb1a4;
+  background-color: #eb455f;
+}
+
+.section::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: #ef5b0c;
+  display: none;
 }
 
 @media screen and (min-width: 610px) {
   .section {
     width: 100%;
+    background-color: #d4f6cc;
+  }
+  .section::before {
+    display: block;
+    width: 90%;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .section {
     padding-top: 5rem;
+  }
+
+  .section::before {
+    display: block;
+    width: 60%;
   }
 }
 
@@ -25,7 +44,7 @@
   justify-content: center;
   align-items: center;
   padding: 1.2rem 2.4rem 3.6rem;
-  background-color: teal;
+  /* background-color: teal; */
   margin: 0;
 }
 
@@ -82,7 +101,8 @@
   position: absolute;
   top: -10%;
   left: 0;
-  fill: #023f92;
+  /* fill: #023f92; */
+  fill: #003865;
   width: 60vmax;
   z-index: 1;
   animation: move 10s ease-in-out;

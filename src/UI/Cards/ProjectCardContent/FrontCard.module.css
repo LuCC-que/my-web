@@ -7,6 +7,8 @@
 
 img {
   max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
 }
 
 .icon::before {
@@ -35,10 +37,12 @@ img {
 .front {
   -webkit-transition: 250ms;
   transition: 250ms;
+  overflow: hidden;
 }
 
-.front .thumbnail {
+.thumbnail {
   border-radius: var(--br);
+  display: inline;
 }
 
 .name {
@@ -46,7 +50,7 @@ img {
   color: black;
 }
 
-.front .stats {
+.stats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,4 +180,3 @@ img {
     opacity: 0;
   }
 }
-/*# sourceMappingURL=main.css.map */

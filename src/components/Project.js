@@ -1,5 +1,7 @@
 import classes from "./Project.module.css";
 import ProjectBoard from "../UI/ProjectBoard";
+import project from "../img/project1.jpg";
+
 import {
   SiGo,
   SiCplusplus,
@@ -16,6 +18,8 @@ const ProjectsArray = [
       subtitle: "Cryptography",
       langauges: [<SiGo size={30} key={`SiGo-${1}`} />],
       mark: 1,
+      image: project,
+      href: "https://github.com/LuCC-que/end-to-end-enc-sys-in-go",
     },
     {
       title: "Virtual Machine",
@@ -25,6 +29,8 @@ const ProjectsArray = [
         <SiCmake size={20} key={`SiCmake-${1}`} />,
       ],
       mark: 2,
+      image: project,
+      href: "https://github.com/LuCC-que/hoover-vm",
     },
     {
       title: "Interpreter",
@@ -35,13 +41,15 @@ const ProjectsArray = [
         <SiDocker size={20} key={`SiDocker-${1}`} />,
       ],
       mark: 3,
+      image: project,
+      href: "https://github.com/LuCC-que/hoover-vm",
     },
   ],
 ];
 let count = 0;
 const Project = () => {
   return (
-    <section className="section">
+    <section id="projects" className="section">
       <div className={classes["section-title"]}>
         <h2 className={classes.title}>Things I've Built</h2>
         <span className={classes.subtitle}>Some of my recent Projects</span>

@@ -3,7 +3,7 @@ import ContactInfo from "./ContactMeContents/ContactInfo";
 import ContactForm from "./ContactMeContents/ContactForm";
 const ContactMe = () => {
   return (
-    <section className={classes.sectionContactMe}>
+    <section id="contact" className={classes.sectionContactMe}>
       <div className={classes.container}>
         <ContactInfo />
         <ContactForm />

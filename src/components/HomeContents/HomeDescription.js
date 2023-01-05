@@ -7,9 +7,9 @@ const HomeDescription = () => {
       </h1>
       <span className={classes.subtitle}>I am a Coder</span>
       <p className={classes.text}>
-        High level experience in web design and
+        As a coder, I am always looking for new challenges to tackle
         <br></br>
-        development knowledge,producing quality work.
+        and enjoy the process of problem-solving through coding.
       </p>
       <a href="#contact" className={classes.calltoaction}>
         Contact Me

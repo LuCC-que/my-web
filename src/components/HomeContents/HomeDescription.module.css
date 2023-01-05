@@ -79,6 +79,7 @@
   display: inline-block;
   font-size: 1.8rem;
   margin-bottom: 1.4rem;
+  color: #d4f6cc;
 }
 
 @media screen and (min-width: 1024px) {
@@ -90,7 +91,7 @@
 .text {
   font-size: 1.5rem;
   margin-bottom: 5rem;
-  color: var(--text-color-light);
+  color: #fff6bd;
 }
 
 @media screen and (min-width: 1024px) {
