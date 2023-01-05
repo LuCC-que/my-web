@@ -6,8 +6,7 @@ const NavBarItemsInfo = [
   { href: "#home", content: "Home" },
   { href: "#about", content: "About" },
   { href: "#skills", content: "Skills" },
-  { href: "#services", content: "Services" },
-  { href: "#portfolio", content: "Portfolio" },
+  { href: "#projects", content: "Services" },
   { href: "#contact", content: "Contact me" },
 ];
 

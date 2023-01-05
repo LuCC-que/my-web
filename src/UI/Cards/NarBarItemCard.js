@@ -1,10 +1,11 @@
 import classes from "./NarBarItemCard.module.css";
 const NavBarItemCard = (props) => {
-  const { herf, content } = props.item;
+  const { href, content } = props.item;
+
   // adding '-active' to highlight
   return (
     <li className={classes.item}>
-      <a href={herf} className={classes.link}>
+      <a href={href} className={classes.link}>
         <svg
           width="15"
           height="16"

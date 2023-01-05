@@ -1,0 +1,179 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.icon::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.streamers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+}
+
+.streamers img {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+}
+
+.front {
+  -webkit-transition: 250ms;
+  transition: 250ms;
+}
+
+.front .thumbnail {
+  border-radius: var(--br);
+}
+
+.name {
+  margin: 0.75em 0;
+  color: black;
+}
+
+.front .stats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.front .streamers img {
+  border: 2px solid var(--clr-dark);
+}
+
+.front .streamers img:nth-of-type(1) {
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+  z-index: 1;
+}
+
+.front .streamers img:nth-of-type(2) {
+  -webkit-transform: translateX(25%);
+  transform: translateX(25%);
+}
+
+.hover {
+  -webkit-transform: translateY(-30%) scale(0.8);
+  transform: translateY(-30%) scale(0.8);
+}
+
+.hoverName {
+  -webkit-animation: gameName 250ms forwards;
+  animation: gameName 250ms forwards;
+  text-align: center;
+  color: aliceblue;
+}
+
+.hoverStat {
+  opacity: 0;
+}
+
+.streamer .icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  position: relative;
+  -webkit-transition: -webkit-transform ease-in-out 150ms;
+  transition: -webkit-transform ease-in-out 150ms;
+  transition: transform ease-in-out 150ms;
+  transition: transform ease-in-out 150ms, -webkit-transform ease-in-out 150ms;
+}
+
+.streamer:hover .icon {
+  -webkit-transform: translateY(-10%);
+  transform: translateY(-10%);
+}
+
+.streamer:hover .icon::before {
+  opacity: 1;
+}
+
+.streamer .icon:hover {
+  -webkit-transform: translateY(-15%) scale(1.2);
+  transform: translateY(-15%) scale(1.2);
+}
+
+.streamer .icon::before,
+.streamer .icon::after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.streamer .icon::before {
+  content: "\f04b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 0.65em;
+  background: #f00;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  z-index: 10;
+  -webkit-transition: opacity 75ms linear, background-color 100ms linear;
+  transition: opacity 75ms linear, background-color 100ms linear;
+}
+
+.streamer .icon:hover::before {
+  background: #cc0202;
+}
+
+.streamer .icon:hover::after {
+  background: #f00;
+  z-index: 1;
+  -webkit-animation: pulse 1250ms infinite;
+  animation: pulse 1250ms infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  100% {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    opacity: 0.9;
+  }
+  100% {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */

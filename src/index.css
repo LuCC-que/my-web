@@ -54,6 +54,15 @@ img {
   --background-color: hsl(var(--theme-color), 60%, 100%);
   --high-contrast: hsl(var(--theme-color), 100%, 100%);
   --shadow-color: hsl(var(--theme-color), 10%, 90%);
+
+  /*Cards*/
+  --clr-dark: rgb(13, 17, 19);
+  --clr-light: #fff;
+  --clr-accent: rgb(222, 52, 0);
+  --clr-accent-dark: rgb(163, 38, 0);
+  --clr-secondary: rgb(0, 76, 199);
+  --br: 0.5em;
+  --transition: transform 200ms cubic-bezier(0.21, 1, 0.81, 1);
 }
 
 /* PROJECT SETTINGS */

@@ -26,3 +26,18 @@
 .calltoaction > svg path {
   fill: var(--high-contrast);
 }
+
+/* @media screen and (max-width: 600px) {
+  .calltoaction {
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .calltoaction:hover {
+    background-color: var(--first-color-hover);
+    transition: 0.3s;
+  }
+  .calltoaction > svg {
+    display: none;
+  }
+} */

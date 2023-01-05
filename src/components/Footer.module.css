@@ -74,18 +74,64 @@
 
 /*=== REUSABLE COMPONENTS END ===*/
 
-/*=== SKILLS START ===*/
+/*=== FOOTER START ===*/
 
-.container {
-  display: block;
+.footer {
+  background-color: var(--first-color);
+  padding: 4rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 1.6rem 0;
+  }
+}
+
+@media screen and (min-width: 610px) {
+  .container {
+    align-items: flex-start;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    padding: 4rem 0;
+    padding: 0;
+  }
+}
+
+.section-title {
+  text-align: left;
+  margin-bottom: 4rem;
+  padding: 0;
+}
+
+@media screen and (min-width: 610px) {
+  .section-title {
+    padding-top: 1rem;
+  }
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: var(--semi-font);
+  color: var(--high-contrast);
+  margin-bottom: 0.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 3.8rem;
+  }
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  font-weight: var(--semi-font);
+  color: var(--first-color-lighter);
+}
+
+@media screen and (min-width: 1024px) {
+  .subtitle {
+    font-size: 1.4rem;
   }
 }

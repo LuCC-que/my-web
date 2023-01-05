@@ -2,6 +2,7 @@
   position: absolute;
   top: 12.4rem;
   left: 2.4rem;
+  z-index: 1;
 }
 
 @media screen and (min-width: 610px) {

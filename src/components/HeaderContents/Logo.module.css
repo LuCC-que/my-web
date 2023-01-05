@@ -5,12 +5,13 @@
   justify-content: flex-start;
   align-items: center;
   flex: 1;
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 1024px) {
   .logo {
-    font-size: 1.6rem;
-    transition: 0.3s;
+    font-size: 1.8rem;
+    transition: 0.8s;
   }
   .logo:hover {
     color: var(--first-color-hover);

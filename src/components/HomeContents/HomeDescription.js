@@ -2,11 +2,14 @@ import classes from "./HomeDescription.module.css";
 const HomeDescription = () => {
   return (
     <div className={classes["home-content"]}>
-      <h1 className={classes["home-title"]}>Hi, I'am Alexa</h1>
-      <span className={classes.subtitle}>Frontend developer</span>
+      <h1 className={classes["home-title"]}>
+        Hi, <br></br>I'm Lu Chen
+      </h1>
+      <span className={classes.subtitle}>I am a Coder</span>
       <p className={classes.text}>
-        High level experience in web design and development knowledge, producing
-        quality work.
+        High level experience in web design and
+        <br></br>
+        development knowledge,producing quality work.
       </p>
       <a href="#contact" className={classes.calltoaction}>
         Contact Me

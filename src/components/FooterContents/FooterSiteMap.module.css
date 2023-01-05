@@ -1,0 +1,85 @@
+.footer-sitemap {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 5rem;
+}
+
+.list {
+  list-style: none;
+}
+
+@media screen and (min-width: 610px) {
+  .list {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .list {
+    width: 100%;
+    display: flex;
+  }
+}
+
+.item {
+  padding: 1.6rem 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .item {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .item:not(:first-child) {
+    margin-left: 3rem;
+  }
+  .link {
+    color: var(--high-contrast);
+    transition: 0.3s;
+  }
+}
+
+.link {
+  font-size: 1.5rem;
+  font-weight: var(--medium-font);
+  color: var(--first-color-lighter);
+}
+
+@media screen and (min-width: 1024px) {
+  .link {
+    font-size: 1.6rem;
+    transition: 0.3s;
+  }
+}
+
+.item {
+  margin-right: 3.2rem;
+}
+
+@media screen and (min-width: 610px) {
+  .item {
+    margin-right: 0;
+    margin-left: 2.4rem;
+    padding: 0 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .item {
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+.link > svg path {
+  fill: var(--first-color-lighter);
+  transition: 0.3s;
+}
+
+@media screen and (min-width: 1024px) {
+  .link > svg path {
+    fill: var(--high-contrast);
+    transition: 0.3s;
+  }
+}

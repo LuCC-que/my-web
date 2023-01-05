@@ -50,8 +50,10 @@
   bottom: 0;
   left: 0;
   padding: 0;
-  background-color: var(--background-color);
-  z-index: 15;
+  background-color: white;
+  z-index: 100;
+  transition: 0.2s;
+  display: none;
 }
 
 @media screen and (min-width: 1024px) {
@@ -64,14 +66,32 @@
   }
 }
 
-.header > .container {
+.container {
   flex-direction: row;
   justify-content: space-between;
   padding: 0 2.4rem;
 }
 
 @media screen and (min-width: 1024px) {
-  .header > .container {
+  .container {
     padding: 0;
+  }
+}
+
+.displayIt {
+  display: block;
+  animation: dropdown 0.2s linear;
+}
+
+.transparent {
+  background-color: transparent;
+}
+
+@keyframes dropdown {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
   }
 }
