@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 const ExperienceArray = [
   { quantity: "01", text1: "Internship", text2: "Experience" },
   { quantity: "10+", text1: "Completed", text2: "projects" },
-  { quantity: "05+", text1: "Companies", text2: "worked" },
+  { quantity: "3.94/4.3", text1: "cGPA", text2: "-" },
 ];
 
 const SkillArray = [
